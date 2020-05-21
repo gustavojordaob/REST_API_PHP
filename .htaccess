@@ -1,0 +1,6 @@
+RewriteEngine On
+Options All -Indexes
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-D
+RewriteRule ^(.*)$ index.php?route=/$1
